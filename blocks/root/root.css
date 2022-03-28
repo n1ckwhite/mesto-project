@@ -1,0 +1,8 @@
+.root {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  color: #fff;
+  background: #000;
+  max-width: 880px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}

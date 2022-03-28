@@ -1,12 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mesto</title>
-</head>
-<body>
-    
-</body>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pages/index.css" />
+    <title>Mesto Russia</title>
+  </head>
+  <body class="root">
+    <div class="popup">
+      <div class="popup__container">
+        <h2 class="popup__title">Редактировать профиль</h2>
+        <form action="#" class="popup__form" name="profile">
+          <input
+            type="text"
+            name="profile-name"
+            id="name"
+            value="Жак-Ив Кусто"
+            class="popup__form-input popup__form-input_type_name"
+          />
+          <input
+            type="text"
+            name="profile-description"
+            id="name"
+            value="Исследователь океана"
+            class="popup__form-input popup__form-input_type_name"
+          />
+          <button class="popup__form-btn" type="button">Сохранить</button>
+        </form>
+        <button class="popup__form-close" type="button"></button>
+      </div>
+    </div>
+    <header class="header">
+      <img src="images/logo.svg" alt="mesto russia" class="header__logo" />
+    </header>
+    <main class="content">
+      <section class="profile">
+        <div class="profile__user">
+          <img
+            src="images/avatar.png"
+            alt="аватар профиля"
+            class="profile__avatar"
+          />
+          <div class="profile__info">
+            <div class="profile__edit-profile">
+              <h1 class="profile__name">Жак-Ив Кусто</h1>
+              <button class="profile__edit-button" type="button"> </button>
+            </div>
+            <p class="profile__descr">Исследователь океана</p>
+          </div>
+        </div>
+        <button class="profile__add-button" type="button">
+        </button>
+      </section>
+      <section class="photo">
+        <ul class="photo__grid">
+          <li class="photo__item">
+            <img
+              class="photo__img"
+              src="images/kirill-pershin-1088404-unsplash.jpg"
+              alt="Карачаевск"
+            />
+            <div class="photo__descr">
+              <h2 class="photo__text">Карачаевск</h2>
+              <button class="photo__btn" type="button">
+              </button>
+            </div>
+          </li>
+          <li class="photo__item">
+            <img
+              class="photo__img"
+              src="images/kirill-pershin-1404681-unsplash.png"
+              alt="Гора Эльбрус"
+            />
+            <div class="photo__descr">
+              <h2 class="photo__text">Гора Эльбрус</h2>
+              <button class="photo__btn" type="button"></button>
+            </div>
+          </li>
+          <li class="photo__item">
+            <img
+              class="photo__img"
+              src="images/kirill-pershin-1556355-unsplash.png"
+              alt="Домбай"
+            />
+            <div class="photo__descr">
+              <h2 class="photo__text">Домбай</h2>
+              <button class="photo__btn" type="button"> </button>
+            </div>
+          </li>
+          <li class="photo__item">
+            <img
+              class="photo__img"
+              src="images/kirill-pershin-1404681-unsplash.png"
+              alt="Гора Эльбрус"
+            />
+            <div class="photo__descr">
+              <h2 class="photo__text">Гора Эльбрус</h2>
+              <button class="photo__btn" type="button">
+              </button>
+            </div>
+          </li>
+          <li class="photo__item">
+            <img
+              class="photo__img"
+              src="images/kirill-pershin-1556355-unsplash.png"
+              alt="Домбай"
+            />
+            <div class="photo__descr">
+              <h2 class="photo__text">Домбай</h1>
+              <button class="photo__btn" type="button">
+              </button>
+            </div>
+          </li>
+          <li class="photo__item">
+            <img
+              class="photo__img"
+              src="images/kirill-pershin-1088404-unsplash.jpg"
+              alt="Карачаево-Черкеск"
+            />
+            <div class="photo__descr">
+              <h2 class="photo__text">Карачаево-Черкеск</h2>
+              <button class="photo__btn" type="button">
+              </button>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__copyright">&copy; 2022 Mesto Russia</p>
+    </footer>
+  </body>
 </html>
