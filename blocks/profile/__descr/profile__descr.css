@@ -12,6 +12,8 @@
 
 @media screen and (max-width: 425px) {
   .profile__descr {
+    margin: 0 auto;
+    max-width: 190px;
     text-align: center;
     margin-top: 14px;
     font-style: normal;
