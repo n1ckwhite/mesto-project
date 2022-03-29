@@ -10,10 +10,9 @@
   overflow: hidden;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 575px) {
   .profile__descr {
-    margin: 0 auto;
-    max-width: 190px;
+    max-width: 170px;
     text-align: center;
     margin-top: 14px;
     font-style: normal;
