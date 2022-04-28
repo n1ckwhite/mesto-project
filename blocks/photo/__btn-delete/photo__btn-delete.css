@@ -3,6 +3,8 @@
     height: 19px;
     object-fit: cover;
     background: url(../../../images/trash.svg);
+    background-repeat: no-repeat;
+    padding: 0;
     border: 0;
     position: absolute;
     top: 20px;
