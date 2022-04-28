@@ -1,10 +1,10 @@
-.popup__form-close {
+.button-close {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 32px;
     height: 32px;
-    background: url(../../../images/close.svg);
+    background: url(../../images/close.svg);
     background-size: cover;
     border: 0;
     padding: 0;
@@ -16,12 +16,12 @@
     right: -40px;
   }
   
-  .popup__form-close:hover {
+  .button-close:hover {
     opacity: 0.6;
   }
   
   @media screen and (max-width: 768px) {
-    .popup__form-close {
+    .button-close {
       width: 20px;
       height: 20px;
       right: 0;

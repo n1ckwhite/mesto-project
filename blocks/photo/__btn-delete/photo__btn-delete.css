@@ -1,6 +1,7 @@
 .photo__btn-delete {
     width: 18px;
     height: 19px;
+    object-fit: cover;
     background: url(../../../images/trash.svg);
     border: 0;
     position: absolute;
