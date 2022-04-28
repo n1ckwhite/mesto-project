@@ -22,15 +22,46 @@
           <input
             type="text"
             name="profile-description"
-            id="name"
+            id="descr"
             value="Исследователь океана"
             class="popup__form-input popup__form-input_type_name"
           />
           <button class="popup__form-btn" type="submit">Сохранить</button>
         </form>
-        <button class="popup__form-close" type="button"></button>
+        <button class="popup__form-close button-close" type="button"></button>
       </div>
     </div>
+    <div class="popup popup-mesto">
+      <div class="popup__container popup-mesto__container">
+        <h2 class="popup__title popup-mesto__title">Новое место</h2>
+        <form action="#" class="popup__form popup-mesto__form" name="profile">
+          <input
+            type="text"
+            name="profile-name"
+            id="mesto"
+            class="popup__form-input popup__form-input_type_name popup-mesto__form-input"
+            placeholder="Название"
+          />
+          <input
+            type="text"
+            name="profile-description"
+            id="link"
+            class="popup__form-input popup__form-input_type_name popup-mesto__form-input"
+            placeholder="Ссылка на картинку"
+          />
+          <button class="popup__form-btn popup-mesto__form-btn" type="submit">Создать</button>
+        </form>
+        <button class="popup__form-close button-close popup-mesto-close" type="button"></button>
+      </div>
+    </div>
+     <div class="image-block">
+      <div class="image-block__container">
+        <img class="image-block__photo">
+        <p class="image-block__descr"></p>
+      </template>
+        <button class="popup__form-close button-close image-block__close" type="button"></button>
+      </div>
+    </div> 
     <header class="header">
       <img src="images/logo.svg" alt="mesto russia" class="header__logo" />
     </header>
@@ -55,81 +86,26 @@
       </section>
       <section class="photo">
         <ul class="photo__grid">
+          <template id="photo__template">
           <li class="photo__item">
             <img
               class="photo__img"
-              src="images/kirill-pershin-1088404-unsplash.jpg"
-              alt="Карачаевск"
+              src
+              alt
             />
+            <button class="photo__btn-delete"></button>
             <div class="photo__descr">
-              <h2 class="photo__text">Карачаевск</h2>
-              <button class="photo__btn" type="button">
-              </button>
-            </div>
-          </li>
-          <li class="photo__item">
-            <img
-              class="photo__img"
-              src="images/kirill-pershin-1404681-unsplash.png"
-              alt="Гора Эльбрус"
-            />
-            <div class="photo__descr">
-              <h2 class="photo__text">Гора Эльбрус</h2>
+              <h2 class="photo__text"></h2>
               <button class="photo__btn" type="button"></button>
             </div>
-          </li>
-          <li class="photo__item">
-            <img
-              class="photo__img"
-              src="images/kirill-pershin-1556355-unsplash.png"
-              alt="Домбай"
-            />
-            <div class="photo__descr">
-              <h2 class="photo__text">Домбай</h2>
-              <button class="photo__btn" type="button"> </button>
-            </div>
-          </li>
-          <li class="photo__item">
-            <img
-              class="photo__img"
-              src="images/kirill-pershin-1404681-unsplash.png"
-              alt="Гора Эльбрус"
-            />
-            <div class="photo__descr">
-              <h2 class="photo__text">Гора Эльбрус</h2>
-              <button class="photo__btn" type="button">
-              </button>
-            </div>
-          </li>
-          <li class="photo__item">
-            <img
-              class="photo__img"
-              src="images/kirill-pershin-1556355-unsplash.png"
-              alt="Домбай"
-            />
-            <div class="photo__descr">
-              <h2 class="photo__text">Домбай</h1>
-              <button class="photo__btn" type="button">
-              </button>
-            </div>
-          </li>
-          <li class="photo__item">
-            <img
-              class="photo__img"
-              src="images/kirill-pershin-1088404-unsplash.jpg"
-              alt="Карачаево-Черкеск"
-            />
-            <div class="photo__descr">
-              <h2 class="photo__text">Карачаево-Черкеск</h2>
-              <button class="photo__btn" type="button">
-              </button>
-            </div>
-          </li>
+            </li>
+          </template>
         </ul>
       </section>
     </main>
     <footer class="footer">
       <p class="footer__copyright">&copy; 2022 Mesto Russia</p>
     </footer>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
