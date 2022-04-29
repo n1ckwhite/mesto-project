@@ -62,7 +62,7 @@ popupProfileCloseButton.addEventListener("click", function () {
 
 profileAddButton.addEventListener("click", function () {
   profileName.textContent = profileNameInput.value;
-  profileDescr.textContent = profileDescr.value;
+  profileDescr.textContent = profileDescrInput.value;
   openPopup(cardPopup);
 });
 
