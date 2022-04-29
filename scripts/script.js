@@ -40,6 +40,8 @@ const cardPopup = document.querySelector(".popup-mesto");
 const imagePopup = document.querySelector(".image-block");
 const profileName = document.querySelector(".profile__name");
 const profileDescr = document.querySelector(".profile__descr");
+const photoItem = document.querySelector(".image-block__photo");
+const photoDescr = document.querySelector(".image-block__descr");
 const popupProfileCloseButton = document.querySelector(
   ".popup-profile__close-button"
 );
@@ -114,8 +116,6 @@ function cardLikes() {
 }
 
 function openPhoto(alt, src) {
-  const photoItem = document.querySelector(".image-block__photo");
-  const photoDescr = document.querySelector(".image-block__descr");
   photoItem.src = src;
   photoItem.alt = alt;
   photoDescr.textContent = alt;
