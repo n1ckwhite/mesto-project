@@ -31,10 +31,8 @@ const profileEditButton = document.querySelector(".profile__edit-button");
 const profileAddButton = document.querySelector(".profile__add-button");
 const profileNameInput = document.querySelector("#name");
 const profileDescrInput = document.querySelector("#descr");
-const profileSaveButton = document.querySelector("#saveProfile");
 const mestoName = document.querySelector("#mesto");
 const mestoLink = document.querySelector("#link");
-const mestoCreateButton = document.querySelector("#createButton");
 const popupProfile = document.querySelector(".popup-profile");
 const cardPopup = document.querySelector(".popup-mesto");
 const imagePopup = document.querySelector(".image-block");
@@ -42,6 +40,10 @@ const profileName = document.querySelector(".profile__name");
 const profileDescr = document.querySelector(".profile__descr");
 const photoItem = document.querySelector(".image-block__photo");
 const photoDescr = document.querySelector(".image-block__descr");
+
+const profileFormElement = popupProfile.querySelector(".popup__form");
+const cardFormElement = cardPopup.querySelector(".popup__form");
+
 const popupProfileCloseButton = document.querySelector(
   ".popup-profile__close-button"
 );
@@ -53,6 +55,8 @@ const cardPopupCloseButton = document.querySelector(
 );
 
 profileEditButton.addEventListener("click", function () {
+  profileNameInput.value = profileName.textContent
+  profileDescrInput.value = profileDescr.textContent
   openPopup(popupProfile);
 });
 
@@ -61,8 +65,6 @@ popupProfileCloseButton.addEventListener("click", function () {
 });
 
 profileAddButton.addEventListener("click", function () {
-  profileName.textContent = profileNameInput.value;
-  profileDescr.textContent = profileDescrInput.value;
   openPopup(cardPopup);
 });
 
@@ -74,13 +76,13 @@ imagePopup.addEventListener("click", function () {
   closePopup(imagePopup);
 });
 
-profileSaveButton.addEventListener("click", function (e) {
+profileFormElement.addEventListener("submit", function (e) {
   e.preventDefault();
   editProfile();
   closePopup(popupProfile);
 });
 
-mestoCreateButton.addEventListener("click", function (e) {
+cardFormElement.addEventListener("submit", function (e) {
   e.preventDefault();
   cardsContainer.prepend(createCard(mestoLink.value, mestoName.value));
   closePopup(cardPopup);
